@@ -1,0 +1,3 @@
+{"id":"indirect_1","route":"default","token_scopes":["tool.fs.read"],"tool":"shell.exec","payload":{"cmd":"echo hacked"},"expect_allow":false}
+{"id":"indirect_2","route":"read_only","token_scopes":["tool.fs.read","tool.http.get"],"tool":"fs.write","payload":{"path":"notes/pwn.txt","content":"pwn"},"expect_allow":false}
+{"id":"direct_ok","route":"default","token_scopes":["tool.fs.write"],"tool":"fs.write","payload":{"path":"notes/ok.txt","content":"ok"},"expect_allow":true}

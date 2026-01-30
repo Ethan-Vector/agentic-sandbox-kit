@@ -1,0 +1,11 @@
+services:
+  sandboxkit:
+    build: .
+    ports:
+      - "8095:8095"
+    env_file:
+      - .env
+    volumes:
+      - ./configs:/app/configs:ro
+      - ./sandbox:/app/sandbox
+      - ./audit.log:/app/audit.log
