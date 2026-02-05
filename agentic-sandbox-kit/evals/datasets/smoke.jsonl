@@ -1,0 +1,2 @@
+{"id": "calc_basic", "input": "Calculate 19*7", "expected_substring": "133"}
+{"id": "echo", "input": "Please echo hello world", "expected_substring": "MockLLM"}

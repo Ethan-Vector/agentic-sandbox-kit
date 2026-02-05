@@ -1,0 +1,24 @@
+{
+  "sandbox": {
+    "workspace_dir": "workspace",
+    "max_steps": 8,
+    "tool_timeout_s": 3,
+    "max_total_time_s": 12,
+    "allowed_tools": [
+      "calc",
+      "note_append",
+      "read_file",
+      "write_file",
+      "list_files",
+      "echo"
+    ]
+  },
+  "tracing": {
+    "enabled": true,
+    "trace_dir": "workspace/traces"
+  },
+  "provider": {
+    "type": "mock",
+    "model": "mock:deterministic-v1"
+  }
+}

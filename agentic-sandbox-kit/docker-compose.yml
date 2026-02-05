@@ -1,0 +1,6 @@
+services:
+  askit:
+    build: .
+    volumes:
+      - ./workspace:/app/workspace
+    command: ["askit", "demo"]

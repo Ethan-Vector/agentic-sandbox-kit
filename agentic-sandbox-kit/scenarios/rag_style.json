@@ -1,0 +1,4 @@
+{
+  "id": "rag_style",
+  "input": "Read workspace/knowledge.txt and summarize it in 2 sentences."
+}
